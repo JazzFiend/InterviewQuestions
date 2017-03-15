@@ -1,0 +1,20 @@
+Part 1:
+
+You are given an array of integers.  Determine the largest sum of two adjacent values.
+
+For example, given the following array:
+[3, 5, 6, 9, -3, -1]
+The largest sum of two adjacent values would be 15 (9 + 6).
+
+Part 2:
+
+You are given an array of integers.  Determine the largest sum of consecutive integers.
+For example, using the array from Part 1:
+[3, 5, 6, 9, -3, -1]
+The largest sum of consecutive integers would be 23 (3 + 5 + 6 + 9).
+
+
+Answer:
+Part 1 is very straightforward and should be used as a warm up for junior candidates.  Simply iterate through the list and sum the current and next number together.  Keep the largest in a temp variable.  Need to set the loop up to not go off the edge of the array.  Time Complexity: O(n)
+
+Worst case, Part 2 can only be done with a Big O of O(n^n), but there are shortcuts.  The trick is that numbers can be combined into one value.  With the example above, positive and negative consecutive values can be combined, making the array [25, -4], which is a heck of a lot easier to solve.  This can turn the array into alternating postive and negative numbers.  At this point, you can attempt to condense down the two largest positive numbers along with the numbers between them, if their sum is larger than the most positive number.
