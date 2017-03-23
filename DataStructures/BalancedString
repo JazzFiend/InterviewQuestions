@@ -1,0 +1,19 @@
+Write a function to determine whether or not a string is "Balanced."
+A string is balanced if all pairs of parenthesies and brackets match up correctly.
+
+For example.
+
+()[] - Balanced
+([]) - Balanced
+()[  - Not Balanced
+
+
+
+
+
+
+The best way to answer this problem is with a stack.  Traverse the string and push open characters
+onto the stack.  When you see a close character, make sure it matches up with the item at the top
+of the stack.  Also need to cover for the case where the stack still contains items after the string
+has been traversed.  This is a good question to see how the candidate does with test cases because
+there are a handful of edge cases.

@@ -1,0 +1,9 @@
+How would you test a typical elevator?
+
+
+
+Very open ended question.  Here's some stuff to look for.
+Does the candidate acknowledge that there are vague requirements inherint in the question?  What does he or she do about them?
+Basic test cases (push the button, does the door open, go to a floor, etc...)
+Safety should be a concern here.  How does the elevator fail?
+Boundary testing can be considered going from top to bottom.
