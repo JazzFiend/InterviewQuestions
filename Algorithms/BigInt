@@ -1,0 +1,10 @@
+Create a BigInt class.  This class should be able to accomodate very large integers without a maximum value (no rollover).  Create the BigInt constructor, the data structure to represent the number and an incrementByOne() function.
+
+For Example:
+BigInt myBigInt = new BigInt("12345");
+myBigInt.incrementByOne();
+myBigInt.display() //Would output 12346.  You do not need to implement the display function.
+
+
+This question tests a little object oriented stuff as well, as they need to make a class and test it to succeed.  An array/list of single digit integers should be used to store the number.  The constructor will need to convert the string to a series of integers.  As for the increment function, start at the end of the array and add one to the number.  If the number is now 10, set the number to 0, then move to the next element in the array.  If we get through the entire array, create a new array with a 1 in the first element followed by zeroes.  If we don't overflow on a given increment, bail out of the loop.
+
