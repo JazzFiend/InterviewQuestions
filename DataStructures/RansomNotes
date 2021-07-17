@@ -1,0 +1,13 @@
+Ransom Notes
+Given a string, "document," determine if a second string, "message," can be constructed using only the characters in "document."
+
+Examples:
+Input: mes = "scary note", doc = "a bunch of text from today's newspaper"
+Output: True
+
+Input: mes = "even scarier note", doc = "a bunch of text from today's newspaper"
+Output: False    // doc does not have a 'v' or enough 'e's
+
+Part 2: Ignore Spaces
+Part 3: Consider upper and lower case letters to be the same.
+PArt 4: (No Code) How do you with inputs of billions of characters?
